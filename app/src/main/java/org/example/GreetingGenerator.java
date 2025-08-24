@@ -2,18 +2,22 @@ package org.example;
 import java.util.Random;
 
 public class GreetingGenerator {
-  // This is just an example class to demonstrate how everything works
-  // You should delete this file when you implement your own solution
-
-  //N = number of steps = 10
-  //M = number of trial = 10
-  //D = Final Position
-
 
   public int Coinflip() {
     Random randomGenerator = new Random();
-    int randomNumber = randomGenerator.nextInt(2);
+    int randomNumber = randomGenerator.nextBoolean() ? 1 : -1;
 
     return randomNumber;
   }
+
+  public int Steps(int step){
+    int currentPosition = 0;
+    
+    for (int i = 0; i < step; i++){
+      currentPosition += Coinflip();
+    }
+
+    return currentPosition;
+  }
+
 }
