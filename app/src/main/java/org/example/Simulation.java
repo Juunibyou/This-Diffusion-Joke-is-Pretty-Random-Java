@@ -1,7 +1,7 @@
 package org.example;
 import java.util.Random;
 
-public class GreetingGenerator {
+public class Simulation {
   Random randomGenerator = new Random();
 
   public int Coinflip() {

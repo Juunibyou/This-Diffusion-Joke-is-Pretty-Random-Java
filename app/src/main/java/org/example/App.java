@@ -2,10 +2,10 @@ package org.example;
 
 public class App {
     public static void main(String[] args) {
-      GreetingGenerator generator = new GreetingGenerator();
+      Simulation generator = new Simulation();
 
-      int[] N = {10, 20, 30, 40};
-      int M = 10;
+      int[] N = {10, 500, 1000, 10000};
+      int M = 5;
 
       for (int stepCount : N){
         System.out.println("N (Steps), M (Trials), D (Final), T (Time)");
