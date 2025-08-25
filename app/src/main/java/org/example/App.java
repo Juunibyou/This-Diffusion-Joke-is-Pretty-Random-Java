@@ -8,6 +8,8 @@ public class App {
       int M = 10;
 
       for (int stepCount : N){
+        System.out.println("N (Steps), M (Trials), D (Final)");
+        
         for(int i = 1; i <= M; i++){
           int finalPosition = generator.Steps(stepCount);
           System.out.println(stepCount + ", " + i + ", " + finalPosition); 
