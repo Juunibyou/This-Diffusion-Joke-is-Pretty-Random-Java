@@ -2,9 +2,9 @@ package org.example;
 import java.util.Random;
 
 public class GreetingGenerator {
+  Random randomGenerator = new Random();
 
   public int Coinflip() {
-    Random randomGenerator = new Random();
     int randomNumber = randomGenerator.nextBoolean() ? 1 : -1;
 
     return randomNumber;
